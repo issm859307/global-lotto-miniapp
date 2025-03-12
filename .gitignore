@@ -2,3 +2,12 @@ node_modules/
 .next/ 
 dist/ 
 out/ 
+# 안드로이드 SDK 관련 폴더 무시
+AppData/Local/Android/
+# 시스템 & 불필요한 파일 무시
+AppData/Local/
+AppData/Roaming/
+AppData/
+node_modules/
+dist/
+out/
