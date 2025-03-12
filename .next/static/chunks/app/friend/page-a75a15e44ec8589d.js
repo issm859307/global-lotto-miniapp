@@ -1,9 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[859],{5970:function(e,r,t){Promise.resolve().then(t.bind(t,6670))},6670:function(e,r,t){"use strict";t.r(r),t.d(r,{default:function(){return i}});var n=t(9268),o=t(6006);function i(){let[e,r]=(0,o.useState)(""),[t,i]=(0,o.useState)(""),s=()=>{i("친구 초대에 성공했습니다! 초대 보상으로, 각 회차 추첨 시 총 금액의 2%가 보상으로 배분됩니다.")};return(0,n.jsxs)("div",{style:{padding:20},children:[(0,n.jsx)("h1",{children:"친구 초대"}),(0,n.jsx)("p",{children:"초대 코드를 입력하거나, 초대 링크를 복사하여 친구에게 공유하세요."}),(0,n.jsx)("input",{type:"text",placeholder:"초대 코드 입력",value:e,onChange:e=>r(e.target.value),style:{padding:"8px",marginRight:"10px"}}),(0,n.jsx)("button",{onClick:s,children:"친구 초대하기"}),t&&(0,n.jsx)("div",{style:{marginTop:16,color:"green"},children:(0,n.jsx)("p",{children:t})})]})}},3177:function(e,r,t){"use strict";/**
- * @license React
- * react-jsx-runtime.production.min.js
- *
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */var n=t(6006),o=Symbol.for("react.element"),i=(Symbol.for("react.fragment"),Object.prototype.hasOwnProperty),s=n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,u={key:!0,ref:!0,__self:!0,__source:!0};function l(e,r,t){var n,l={},c=null,a=null;for(n in void 0!==t&&(c=""+t),void 0!==r.key&&(c=""+r.key),void 0!==r.ref&&(a=r.ref),r)i.call(r,n)&&!u.hasOwnProperty(n)&&(l[n]=r[n]);if(e&&e.defaultProps)for(n in r=e.defaultProps)void 0===l[n]&&(l[n]=r[n]);return{$$typeof:o,type:e,key:c,ref:a,props:l,_owner:s.current}}r.jsx=l,r.jsxs=l},9268:function(e,r,t){"use strict";e.exports=t(3177)}},function(e){e.O(0,[667,139,744],function(){return e(e.s=5970)}),_N_E=e.O()}]);
