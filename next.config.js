@@ -1,7 +1,5 @@
-// next.config.js
-module.exports = {
+const nextTranslate = require("next-translate");
+
+module.exports = nextTranslate({
   reactStrictMode: true,
-  experimental: {
-    appDir: true, // ✅ Next.js 13+에서 app/ 디렉터리를 사용하도록 설정
-  },
-};
+});
