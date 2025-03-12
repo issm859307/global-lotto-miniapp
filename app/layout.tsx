@@ -16,9 +16,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header style={{ padding: "10px", display: "flex", justifyContent: "flex-end" }}>
           <LanguageSwitcher />
         </header>
+        
+        {/* 메인 컨텐츠 영역 */}
         <div style={{ minHeight: "100vh", paddingBottom: "70px" }}>
           {children}
         </div>
+        
+        {/* 하단 내비게이션 */}
         <nav
           style={{
             position: "fixed",
@@ -34,15 +38,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             fontSize: "14px",
           }}
         >
-          <Link href="/"><a>홈</a></Link>
-          <Link href="/ticket"><a>티켓 구매</a></Link>
-          <Link href="/lotto"><a>일반 로또</a></Link>
-          <Link href="/vip-lotto"><a>VIP 로또</a></Link>
-          <Link href="/claim"><a>상품 청구</a></Link>
-          <Link href="/faq"><a>FAQ</a></Link>
-          <Link href="/quick"><a>빠른 작업</a></Link>
-          <Link href="/notify"><a>알림</a></Link>
-          <Link href="/friend"><a>친구 초대</a></Link>
+          <Link href="/">홈</Link>
+          <Link href="/ticket">티켓 구매</Link>
+          <Link href="/lotto">일반 로또</Link>
+          <Link href="/vip-lotto">VIP 로또</Link>
+          <Link href="/claim">상품 청구</Link>
+          <Link href="/faq">FAQ</Link>
+          <Link href="/quick">빠른 작업</Link>
+          <Link href="/notify">알림</Link>
+          <Link href="/friend">친구 초대</Link>
         </nav>
       </body>
     </html>
