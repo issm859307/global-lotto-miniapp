@@ -1,0 +1,79 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack-b5e352f0745b936d.js",
+      "static/chunks/2443530c-591f97b5f0e46e94.js",
+      "static/chunks/139-a5176b8b1cfc7b2c.js",
+      "static/chunks/main-app-e520fd6e8dee7fe7.js",
+      "static/chunks/699-e7a78a9fb451cafe.js",
+      "static/chunks/app/page-75e9d37007549bc6.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-b5e352f0745b936d.js",
+      "static/chunks/2443530c-591f97b5f0e46e94.js",
+      "static/chunks/139-a5176b8b1cfc7b2c.js",
+      "static/chunks/main-app-e520fd6e8dee7fe7.js",
+      "static/chunks/934-77548aaefa38b210.js",
+      "static/css/eed7de5c7fd5b593.css",
+      "static/chunks/app/layout-02bef9bc47b9b1eb.js"
+    ],
+    "/claim/page": [
+      "static/chunks/webpack-b5e352f0745b936d.js",
+      "static/chunks/2443530c-591f97b5f0e46e94.js",
+      "static/chunks/139-a5176b8b1cfc7b2c.js",
+      "static/chunks/main-app-e520fd6e8dee7fe7.js",
+      "static/chunks/app/claim/page-ac0e1e768a43c8c6.js"
+    ],
+    "/friend/page": [
+      "static/chunks/webpack-b5e352f0745b936d.js",
+      "static/chunks/2443530c-591f97b5f0e46e94.js",
+      "static/chunks/139-a5176b8b1cfc7b2c.js",
+      "static/chunks/main-app-e520fd6e8dee7fe7.js",
+      "static/chunks/app/friend/page-a75a15e44ec8589d.js"
+    ],
+    "/faq/page": [
+      "static/chunks/webpack-b5e352f0745b936d.js",
+      "static/chunks/2443530c-591f97b5f0e46e94.js",
+      "static/chunks/139-a5176b8b1cfc7b2c.js",
+      "static/chunks/main-app-e520fd6e8dee7fe7.js",
+      "static/chunks/app/faq/page-225db5722660a633.js"
+    ],
+    "/lotto/page": [
+      "static/chunks/webpack-b5e352f0745b936d.js",
+      "static/chunks/2443530c-591f97b5f0e46e94.js",
+      "static/chunks/139-a5176b8b1cfc7b2c.js",
+      "static/chunks/main-app-e520fd6e8dee7fe7.js",
+      "static/chunks/app/lotto/page-c41d60188b5f28cc.js"
+    ],
+    "/notify/page": [
+      "static/chunks/webpack-b5e352f0745b936d.js",
+      "static/chunks/2443530c-591f97b5f0e46e94.js",
+      "static/chunks/139-a5176b8b1cfc7b2c.js",
+      "static/chunks/main-app-e520fd6e8dee7fe7.js",
+      "static/chunks/699-e7a78a9fb451cafe.js",
+      "static/chunks/app/notify/page-56be623a2b40de46.js"
+    ],
+    "/quick/page": [
+      "static/chunks/webpack-b5e352f0745b936d.js",
+      "static/chunks/2443530c-591f97b5f0e46e94.js",
+      "static/chunks/139-a5176b8b1cfc7b2c.js",
+      "static/chunks/main-app-e520fd6e8dee7fe7.js",
+      "static/chunks/app/quick/page-fc21fa79197f404f.js"
+    ],
+    "/vip-lotto/page": [
+      "static/chunks/webpack-b5e352f0745b936d.js",
+      "static/chunks/2443530c-591f97b5f0e46e94.js",
+      "static/chunks/139-a5176b8b1cfc7b2c.js",
+      "static/chunks/main-app-e520fd6e8dee7fe7.js",
+      "static/chunks/app/vip-lotto/page-04882eb4219cb228.js"
+    ],
+    "/ticket/page": [
+      "static/chunks/webpack-b5e352f0745b936d.js",
+      "static/chunks/2443530c-591f97b5f0e46e94.js",
+      "static/chunks/139-a5176b8b1cfc7b2c.js",
+      "static/chunks/main-app-e520fd6e8dee7fe7.js",
+      "static/chunks/699-e7a78a9fb451cafe.js",
+      "static/chunks/app/ticket/page-a49c1ca934350cd1.js"
+    ]
+  }
+}

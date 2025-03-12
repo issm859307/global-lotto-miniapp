@@ -1,0 +1,12 @@
+{
+  "/page": "app/page.js",
+  "/claim/page": "app/claim/page.js",
+  "/friend/page": "app/friend/page.js",
+  "/faq/page": "app/faq/page.js",
+  "/lotto/page": "app/lotto/page.js",
+  "/notify/page": "app/notify/page.js",
+  "/quick/page": "app/quick/page.js",
+  "/vip-lotto/page": "app/vip-lotto/page.js",
+  "/ticket/page": "app/ticket/page.js",
+  "/api/verify-lotto/route": "app/api/verify-lotto/route.js"
+}
