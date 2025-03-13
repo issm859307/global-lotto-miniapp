@@ -1,13 +1,11 @@
-// app/claim/page.tsx
 "use client";
 
 import { useState } from "react";
 
 export default function ClaimPage() {
-  // 예시 영수증 데이터 (실제 데이터는 백엔드 연동 필요)
   const [receipt, setReceipt] = useState({
     gameId: "LOTTO20230301",
-    claimDeadline: new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000), // 현재부터 30일 후
+    claimDeadline: new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000),
     amount: "100 WLD",
     claimed: false,
   });

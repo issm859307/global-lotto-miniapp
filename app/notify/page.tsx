@@ -1,8 +1,8 @@
-// app/notify/page.tsx
 "use client";
 
 import { useState } from "react";
 import { MiniKit } from "@worldcoin/minikit-js";
+
 console.log("MiniKit Commands:", MiniKit.commands);
 
 export default function NotifyPage() {
@@ -11,6 +11,7 @@ export default function NotifyPage() {
     Array<{ username: string; walletAddress: string }>
   >([]);
 
+  // 알림 전송 기능 (현재 MiniKit에서 지원되지 않을 경우, 대체 알림 API를 사용)
   const sendTestNotification = async () => {
     try {
       const payload = {
@@ -18,7 +19,7 @@ export default function NotifyPage() {
         title: "로또 알림 🎟",
         message: "다음 로또 추첨까지 24시간 남았습니다! ⏰",
         mini_app_path: "worldapp://mini-app?app_id=global_lotto_mini_app&path=/lotto",
-        app_id: "api_a2V5XzZjNjg2YzVlMGI4ZmQ0ZWVlYjEyMDdmYzM4OTgwNzE5OnNrXzI0OGY5NjYyOTM2ZDI5Mjc3NThjNmI4Njk3NThmY2VlYWU3ZjIyMWM0YzVlOWNhMg", // 실제 app_id로 교체 필요
+        app_id: "api_a2V5XzZjNjg2YzVlMGI4ZmQ0ZWVlYjEyMDdmYzM4OTgwNzE5OnNrXzI0OGY5NjYyOTM2ZDI5Mjc3NThjNmI4Njk3NThmY2VlYWU3ZjIyMWM0YzVlOWNhMg",
       };
 
       const result = await MiniKit.commands.sendNotifications(payload);

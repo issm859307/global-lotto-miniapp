@@ -1,9 +1,7 @@
-// app/lotto/page.tsx
 "use client";
 
 import { useState, useEffect } from "react";
 
-// CountdownTimer 컴포넌트: 추첨일까지 남은 시간을 표시
 function CountdownTimer({ targetDate }: { targetDate: Date }) {
   const calculateTimeLeft = () => {
     const difference = +targetDate - +new Date();
@@ -42,7 +40,6 @@ function CountdownTimer({ targetDate }: { targetDate: Date }) {
   return <div>{timerComponents.length ? timerComponents : <span>추첨 진행 중...</span>}</div>;
 }
 
-// 1부터 45까지 중복 없이 랜덤 번호 생성 함수
 function getRandomNumbers(count: number) {
   const numbers: number[] = [];
   while (numbers.length < count) {
@@ -59,7 +56,6 @@ export default function LottoPage() {
   const [drawNumbers, setDrawNumbers] = useState<number[]>([]);
   const [resultMessage, setResultMessage] = useState("");
 
-  // 일반 로또 추첨일: 현재 시각 + 7일 (7일 주기)
   const targetDate = new Date(new Date().getTime() + 7 * 24 * 60 * 60 * 1000);
 
   const handleSelectNumber = (num: number) => {
@@ -123,7 +119,7 @@ export default function LottoPage() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>🎟 Global Lotto - 번호 선택 🎟</h1>
+      <h1>🎟 일반 로또 - 번호 선택</h1>
       <div style={{ marginBottom: 16 }}>
         <CountdownTimer targetDate={targetDate} />
       </div>

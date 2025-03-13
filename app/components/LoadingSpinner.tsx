@@ -1,4 +1,3 @@
-// app/components/LoadingSpinner.tsx
 "use client";
 
 export default function LoadingSpinner() {

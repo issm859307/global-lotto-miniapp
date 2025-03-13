@@ -1,4 +1,3 @@
-// app/layout.tsx
 "use client";
 
 import "../styles/globals.css";
@@ -16,13 +15,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header style={{ padding: "10px", display: "flex", justifyContent: "flex-end" }}>
           <LanguageSwitcher />
         </header>
-        
-        {/* 메인 컨텐츠 영역 */}
         <div style={{ minHeight: "100vh", paddingBottom: "70px" }}>
           {children}
         </div>
-        
-        {/* 하단 내비게이션 */}
         <nav
           style={{
             position: "fixed",
@@ -46,7 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Link href="/faq">FAQ</Link>
           <Link href="/quick">빠른 작업</Link>
           <Link href="/notify">알림</Link>
-          <Link href="/friend">친구 초대</Link>
+          <Link href="/share" className="text-blue-500 font-bold">📢 공유</Link>
         </nav>
       </body>
     </html>

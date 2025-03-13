@@ -1,9 +1,7 @@
-// app/vip-lotto/page.tsx
 "use client";
 
 import { useState, useEffect } from "react";
 
-// CountdownTimer 컴포넌트 (일반 로또와 동일)
 function CountdownTimer({ targetDate }: { targetDate: Date }) {
   const calculateTimeLeft = () => {
     const difference = +targetDate - +new Date();
@@ -42,7 +40,6 @@ function CountdownTimer({ targetDate }: { targetDate: Date }) {
   return <div>{timerComponents.length ? timerComponents : <span>추첨 진행 중...</span>}</div>;
 }
 
-// 랜덤 번호 생성 함수 (일반 로또와 동일)
 function getRandomNumbers(count: number) {
   const numbers: number[] = [];
   while (numbers.length < count) {
@@ -55,12 +52,11 @@ function getRandomNumbers(count: number) {
 }
 
 export default function VipLottoPage() {
-  const [ticketCount, setTicketCount] = useState(1); // VIP 티켓 구매 수량
+  const [ticketCount, setTicketCount] = useState(1);
   const [userNumbers, setUserNumbers] = useState<number[]>([]);
   const [drawNumbers, setDrawNumbers] = useState<number[]>([]);
   const [resultMessage, setResultMessage] = useState("");
 
-  // VIP 로또 추첨일: 현재 시각 + 14일
   const targetDate = new Date(new Date().getTime() + 14 * 24 * 60 * 60 * 1000);
 
   const handleSelectNumber = (num: number) => {
@@ -102,9 +98,8 @@ export default function VipLottoPage() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>🌟 VIP Lotto - 번호 선택 🌟</h1>
+      <h1>🌟 VIP Lotto - 번호 선택</h1>
       <p>VIP 티켓은 1티켓당 10 WLD이며, 1~500장까지 구매할 수 있습니다.</p>
-      {/* VIP 로또 누적 잭팟 (추후 백엔드 연동 예정 - 예시값) */}
       <section style={{ marginTop: "20px", padding: "10px", backgroundColor: "#fff3e0", borderRadius: "8px" }}>
         <h2>현재 VIP 잭팟</h2>
         <p style={{ fontSize: "18px", fontWeight: "bold" }}>[VIP 잭팟: X WLD]</p>

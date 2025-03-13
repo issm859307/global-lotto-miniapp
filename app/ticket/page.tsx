@@ -1,4 +1,3 @@
-// app/ticket/page.tsx
 "use client";
 
 import { useState } from "react";
@@ -8,9 +7,8 @@ import LoadingSpinner from "../components/LoadingSpinner";
 export default function TicketPage() {
   const [ticketCount, setTicketCount] = useState(1);
   const [errorMsg, setErrorMsg] = useState("");
-  const [isLoading, setIsLoading] = useState(false); // ✅ 오타 수정
+  const [isLoading, setIsLoading] = useState(false);
 
-  // ✅ 티켓 결제 함수
   const handlePayment = async (amount: number) => {
     setIsLoading(true);
     try {
@@ -21,23 +19,21 @@ export default function TicketPage() {
         description: `티켓 ${amount}장 구매 (수수료 5% 차감)`,
       });
 
-      if (result && result.status === "success") { // ✅ 결제 성공 여부 체크 추가
+      if (result && result.status === "success") {
         alert("✅ 결제 성공! 🎟️ 티켓이 정상적으로 구매되었습니다.");
       } else {
         throw new Error("결제가 정상적으로 완료되지 않았습니다.");
       }
     } catch (error: any) {
       console.error("❌ 결제 오류:", error);
-      handleErrorCode(error?.error_code || "unknown_error"); // ✅ 기본 오류 코드 설정
+      handleErrorCode(error?.error_code || "unknown_error");
     } finally {
       setIsLoading(false);
     }
   };
 
-  // ✅ 오류 메시지 처리 함수
   const handleErrorCode = (code: string) => {
     console.error("⛔ 오류 코드:", code);
-
     switch (code) {
       case "payment_rejected":
         setErrorMsg("결제가 취소되었습니다. 😢");
@@ -57,9 +53,8 @@ export default function TicketPage() {
     }
   };
 
-  // ✅ 유효성 검사 및 결제 실행
   const handleBuyTickets = () => {
-    if (isNaN(ticketCount) || ticketCount < 1 || ticketCount > 100) { // ✅ 숫자 검증 추가
+    if (isNaN(ticketCount) || ticketCount < 1 || ticketCount > 100) {
       alert("⚠️ 티켓 수량은 1장 이상 100장 이하로 입력해야 합니다.");
       return;
     }

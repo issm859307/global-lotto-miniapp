@@ -1,4 +1,3 @@
-// app/components/LanguageSwitcher.tsx
 "use client";
 
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
@@ -16,22 +15,20 @@ const languages = [
   { code: "id", label: "Bahasa Indonesia", flag: "🇮🇩" },
   { code: "vi", label: "Tiếng Việt", flag: "🇻🇳" },
   { code: "ms", label: "Bahasa Melayu", flag: "🇲🇾" },
-  { code: "ar", label: "العربية", flag: "🇸🇦" }
+  { code: "ar", label: "العربية", flag: "🇸🇦" },
 ];
 
 export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  
-  // 현재 URL에서 언어 코드 추출 (예: /ko, /en 등)
+
   const segments = pathname.split("/");
   const currentLocale = i18nConfig.locales.includes(segments[1]) ? segments[1] : i18nConfig.defaultLocale;
 
   const changeLanguage = (lang: string) => {
     let newPath = pathname;
     if (i18nConfig.locales.includes(segments[1])) {
-      // 기존 언어 코드가 있으면 변경
       newPath = "/" + lang + pathname.substring(3);
     } else {
       newPath = "/" + lang + pathname;
@@ -50,7 +47,7 @@ export default function LanguageSwitcher() {
             border: "none",
             cursor: "pointer",
             fontSize: "24px",
-            padding: "0"
+            padding: "0",
           }}
           title={language.label}
         >

@@ -1,4 +1,3 @@
-// app/quick/page.tsx
 "use client";
 
 export default function QuickActionsPage() {

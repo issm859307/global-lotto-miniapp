@@ -8,14 +8,9 @@
   },
   "dependencies": {
     "@worldcoin/minikit-js": "^1.7.1",
-    "bufferutil": "^4.0.9",
-    "next": "^15.2.2",
-    "next-translate": "^2.6.2",
+    "next": "^13.4.0",
+    "next-translate": "^1.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "utf-8-validate": "^6.0.5"
-  },
-  "devDependencies": {
-    "@types/node": "22.13.10"
+    "react-dom": "18.2.0"
   }
 }
