@@ -1,8 +1,14 @@
 {
-    "welcome": "Bem-vindo ao Global Lotto Miniapp!",
-    "buyTicket": "Comprar Ingresso",
-    "language": "Idioma",
-    "connectWallet": "Conectar Carteira",
-    "introText": "O Global Lotto Miniapp oferece um sistema de loteria transparente e justo para usuários em todo o mundo. A cada rodada, os prêmios e as taxas do desenvolvedor são distribuídos automaticamente."
-  }
-  
+  "welcome": "Bem-vindo ao Global Lotto!",
+  "introText": "Um sistema de loteria justo e transparente. Boa sorte!",
+  "connectWallet": "Conectar Carteira",
+  "buyTicket": "Comprar Bilhete",
+  "lotto": "Lotto Geral",
+  "vipLotto": "Lotto VIP",
+  "claim": "Reivindicar Prêmio",
+  "rules": "Regras",
+  "faq": "FAQ",
+  "results": "Resultados",
+  "receipt": "Recibo",
+  "language": "Idioma"
+}

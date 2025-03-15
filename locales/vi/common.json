@@ -1,8 +1,14 @@
 {
-    "welcome": "Chào mừng đến với Global Lotto Miniapp!",
-    "buyTicket": "Mua Vé",
-    "language": "Ngôn ngữ",
-    "connectWallet": "Kết nối Ví",
-    "introText": "Global Lotto Miniapp cung cấp một hệ thống xổ số minh bạch và công bằng cho người dùng trên toàn thế giới. Mỗi vòng quay, tiền thưởng và phí phát triển được phân phối tự động."
-  }
-  
+  "welcome": "Chào mừng đến với Global Lotto!",
+  "introText": "Hệ thống xổ số công bằng và minh bạch. Chúc may mắn!",
+  "connectWallet": "Kết nối Ví",
+  "buyTicket": "Mua Vé",
+  "lotto": "Xổ số Thông thường",
+  "vipLotto": "Xổ số VIP",
+  "claim": "Nhận Giải",
+  "rules": "Quy tắc",
+  "faq": "FAQ",
+  "results": "Kết quả",
+  "receipt": "Biên lai",
+  "language": "Ngôn ngữ"
+}

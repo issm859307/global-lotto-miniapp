@@ -1,7 +1,14 @@
 {
-  "welcome": "グローバルロトミニアプリへようこそ！",
-  "buyTicket": "チケットを購入する",
-  "language": "言語",
-  "connectWallet": "ウォレット接続",
-  "introText": "グローバルロトミニアプリは、世界中のユーザーに透明で公平な宝くじシステムを提供します。各ラウンドで自動的に賞金と開発者手数料が分配されます。"
+  "welcome": "Global Lottoへようこそ！",
+  "introText": "公正で透明な宝くじシステムです。ご幸運を！",
+  "connectWallet": "ウォレットを接続する",
+  "buyTicket": "チケット購入",
+  "lotto": "一般宝くじ",
+  "vipLotto": "VIP宝くじ",
+  "claim": "賞金請求",
+  "rules": "ルール",
+  "faq": "FAQ",
+  "results": "結果",
+  "receipt": "領収書",
+  "language": "言語"
 }

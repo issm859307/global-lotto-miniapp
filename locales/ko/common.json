@@ -1,7 +1,14 @@
 {
-  "welcome": "글로벌 로또 미니앱에 오신 것을 환영합니다!",
-  "buyTicket": "티켓 구매하기",
-  "language": "언어",
+  "welcome": "글로벌 로또에 오신 것을 환영합니다!",
+  "introText": "공정하고 투명한 로또 시스템입니다. 행운을 빕니다!",
   "connectWallet": "지갑 연결하기",
-  "introText": "Global Lotto 미니앱은 전 세계 사용자가 참여할 수 있는 투명하고 공정한 로또 시스템을 제공합니다. 각 회차마다 당첨금 배분 및 개발자 수수료가 집계됩니다."
+  "buyTicket": "티켓 구매하기",
+  "lotto": "일반 로또",
+  "vipLotto": "VIP 로또",
+  "claim": "상품 청구",
+  "rules": "규칙 안내",
+  "faq": "FAQ",
+  "results": "결과",
+  "receipt": "영수증",
+  "language": "언어"
 }

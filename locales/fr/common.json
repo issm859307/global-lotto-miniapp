@@ -1,8 +1,14 @@
 {
-    "welcome": "Bienvenue dans la Mini-App de Loterie Globale !",
-    "buyTicket": "Acheter un Billet",
-    "language": "Langue",
-    "connectWallet": "Connecter le Portefeuille",
-    "introText": "La Mini-App de Loterie Globale offre un système de loterie transparent et équitable pour les utilisateurs du monde entier. Chaque tirage distribue automatiquement les gains et les frais de développement."
-  }
-  
+  "welcome": "Bienvenue sur Global Lotto !",
+  "introText": "Un système de loterie équitable et transparent. Bonne chance !",
+  "connectWallet": "Connecter le portefeuille",
+  "buyTicket": "Acheter un billet",
+  "lotto": "Lotto Général",
+  "vipLotto": "Lotto VIP",
+  "claim": "Réclamer le prix",
+  "rules": "Règles",
+  "faq": "FAQ",
+  "results": "Résultats",
+  "receipt": "Reçu",
+  "language": "Langue"
+}

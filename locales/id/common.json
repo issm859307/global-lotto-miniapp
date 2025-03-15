@@ -1,8 +1,14 @@
 {
-    "welcome": "Selamat datang di Global Lotto Miniapp!",
-    "buyTicket": "Beli Tiket",
-    "language": "Bahasa",
-    "connectWallet": "Hubungkan Dompet",
-    "introText": "Global Lotto Miniapp menawarkan sistem lotere yang transparan dan adil untuk pengguna di seluruh dunia. Setiap putaran, hadiah dan biaya pengembang didistribusikan secara otomatis."
-  }
-  
+  "welcome": "Selamat datang di Global Lotto!",
+  "introText": "Sistem lotere yang adil dan transparan. Semoga beruntung!",
+  "connectWallet": "Hubungkan Dompet",
+  "buyTicket": "Beli Tiket",
+  "lotto": "Lotto Umum",
+  "vipLotto": "Lotto VIP",
+  "claim": "Klaim Hadiah",
+  "rules": "Aturan",
+  "faq": "FAQ",
+  "results": "Hasil",
+  "receipt": "Kuitansi",
+  "language": "Bahasa"
+}

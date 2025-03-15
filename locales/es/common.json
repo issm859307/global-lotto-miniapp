@@ -1,8 +1,14 @@
 {
-    "welcome": "¡Bienvenido a la Miniaplicación de Lotería Global!",
-    "buyTicket": "Comprar Boleto",
-    "language": "Idioma",
-    "connectWallet": "Conectar Cartera",
-    "introText": "La Miniaplicación de Lotería Global ofrece un sistema de lotería transparente y justo para usuarios de todo el mundo. Cada ronda distribuye automáticamente los premios y las tarifas de desarrollo."
-  }
-  
+  "welcome": "¡Bienvenido a Global Lotto!",
+  "introText": "Un sistema de lotería justo y transparente. ¡Buena suerte!",
+  "connectWallet": "Conectar billetera",
+  "buyTicket": "Comprar boleto",
+  "lotto": "Lotto General",
+  "vipLotto": "Lotto VIP",
+  "claim": "Reclamar premio",
+  "rules": "Reglas",
+  "faq": "FAQ",
+  "results": "Resultados",
+  "receipt": "Recibo",
+  "language": "Idioma"
+}

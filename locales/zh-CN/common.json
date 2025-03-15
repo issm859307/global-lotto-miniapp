@@ -1,8 +1,14 @@
 {
-    "welcome": "欢迎使用全球乐透迷你应用！",
-    "buyTicket": "购买彩票",
-    "language": "语言",
-    "connectWallet": "连接钱包",
-    "introText": "全球乐透迷你应用为全球用户提供透明公平的彩票系统。每轮抽奖自动分配奖金和开发者费用。"
-  }
-  
+  "welcome": "欢迎来到 Global Lotto！",
+  "introText": "一个公平透明的彩票系统。祝你好运！",
+  "connectWallet": "连接钱包",
+  "buyTicket": "购买彩票",
+  "lotto": "普通彩票",
+  "vipLotto": "VIP 彩票",
+  "claim": "领取奖品",
+  "rules": "规则",
+  "faq": "FAQ",
+  "results": "结果",
+  "receipt": "收据",
+  "language": "语言"
+}

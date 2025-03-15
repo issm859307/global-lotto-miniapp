@@ -1,8 +1,7 @@
 "use client";
-
 import "../styles/globals.css";
 import Link from "next/link";
-import LanguageSwitcher from "./components/LanguageSwitcher";
+import LanguageDropdown from "./components/LanguageDropdown";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -11,37 +10,36 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>Global Lotto MiniApp</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body>
-        <header style={{ padding: "10px", display: "flex", justifyContent: "flex-end" }}>
-          <LanguageSwitcher />
+      <body className="flex flex-col min-h-screen bg-gray-100">
+        {/* 상단 헤더 */}
+        <header className="bg-white shadow p-4 flex justify-between items-center">
+          <h1 className="text-2xl font-bold animate-fadeIn">Global Lotto</h1>
+          <LanguageDropdown />
         </header>
-        <div style={{ minHeight: "100vh", paddingBottom: "70px" }}>
+
+        {/* 메인 컨텐츠 */}
+        <main className="flex-grow container mx-auto p-4">
           {children}
-        </div>
-        <nav
-          style={{
-            position: "fixed",
-            bottom: 0,
-            left: 0,
-            width: "100%",
-            height: "70px",
-            backgroundColor: "#fff",
-            borderTop: "1px solid #ccc",
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-            fontSize: "14px",
-          }}
-        >
-          <Link href="/">홈</Link>
-          <Link href="/ticket">티켓 구매</Link>
-          <Link href="/lotto">일반 로또</Link>
-          <Link href="/vip-lotto">VIP 로또</Link>
-          <Link href="/claim">상품 청구</Link>
-          <Link href="/faq">FAQ</Link>
-          <Link href="/quick">빠른 작업</Link>
-          <Link href="/notify">알림</Link>
-          <Link href="/share" className="text-blue-500 font-bold">📢 공유</Link>
+        </main>
+
+        {/* 하단 내비게이션 (원형 플로팅 메뉴 효과를 고려한 간단한 탭) */}
+        <nav className="fixed bottom-0 left-0 w-full bg-white border-t shadow flex justify-around items-center h-16 animate-slideInUp">
+          <Link href="/results" className="flex flex-col items-center text-gray-700 text-sm">
+            <span>📊</span>
+            <span>결과</span>
+          </Link>
+          <Link href="/" className="flex flex-col items-center text-gray-700 text-sm">
+            <span>🏠</span>
+            <span>홈</span>
+          </Link>
+          <Link href="/lotto" className="flex flex-col items-center text-gray-700 text-sm">
+            <span>🎟</span>
+            <span>로또</span>
+          </Link>
+          <Link href="/receipt" className="flex flex-col items-center text-gray-700 text-sm">
+            <span>🧾</span>
+            <span>영수증</span>
+          </Link>
         </nav>
       </body>
     </html>

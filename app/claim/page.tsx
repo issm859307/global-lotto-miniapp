@@ -1,44 +1,26 @@
 "use client";
-
 import { useState } from "react";
 
 export default function ClaimPage() {
-  const [receipt, setReceipt] = useState({
-    gameId: "LOTTO20230301",
-    claimDeadline: new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000),
-    amount: "100 WLD",
-    claimed: false,
-  });
   const [claimStatus, setClaimStatus] = useState("");
 
   const handleClaim = () => {
-    const now = new Date();
-    if (now > receipt.claimDeadline) {
-      setClaimStatus("청구 기한이 만료되었습니다. 고객센터에 문의해주세요.");
-    } else {
-      setClaimStatus("상품 청구 성공! 당첨금이 지급됩니다. 🎉");
-    }
+    // 실제 청구 로직은 추후 백엔드/스마트 컨트랙트 연동 예정
+    setClaimStatus("상품 청구 완료! 당첨금을 확인하세요.");
   };
 
   return (
-    <div style={{ padding: 20 }}>
-      <h1>상품 청구</h1>
-      <p>당첨 영수증</p>
-      <ul>
-        <li>게임 ID: {receipt.gameId}</li>
-        <li>당첨금: {receipt.amount}</li>
-        <li>
-          청구 기한: {receipt.claimDeadline.toLocaleDateString()}{" "}
-          <span style={{ fontSize: "12px", color: "#777" }}>
-            (청구 기간 내에 반드시 청구해 주세요.)
-          </span>
-        </li>
-      </ul>
-      <button onClick={handleClaim}>상품 청구하기</button>
+    <div className="max-w-md mx-auto bg-white p-4 rounded shadow animate-fadeIn">
+      <h1 className="text-2xl font-bold mb-4">상품 청구</h1>
+      <p className="mb-2 text-sm text-gray-600">당첨 후 1개월 이내에 청구해야 합니다.</p>
+      <button
+        className="bg-green-500 text-white w-full py-2 rounded transition-transform hover:scale-105"
+        onClick={handleClaim}
+      >
+        청구하기
+      </button>
       {claimStatus && (
-        <div style={{ marginTop: 16, color: claimStatus.includes("성공") ? "green" : "red" }}>
-          {claimStatus}
-        </div>
+        <p className="mt-2 text-center text-green-600">{claimStatus}</p>
       )}
     </div>
   );

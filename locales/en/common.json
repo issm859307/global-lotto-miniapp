@@ -1,7 +1,14 @@
 {
-  "welcome": "Welcome to Global Lotto Miniapp!",
-  "buyTicket": "Buy Ticket",
-  "language": "Language",
+  "welcome": "Welcome to Global Lotto!",
+  "introText": "A fair & transparent lottery system. Good luck!",
   "connectWallet": "Connect Wallet",
-  "introText": "Global Lotto Miniapp offers a transparent and fair lottery system for users worldwide. Each round automatically distributes prize money and developer fees."
+  "buyTicket": "Buy Ticket",
+  "lotto": "General Lotto",
+  "vipLotto": "VIP Lotto",
+  "claim": "Claim Prize",
+  "rules": "Rules",
+  "faq": "FAQ",
+  "results": "Results",
+  "receipt": "Receipt",
+  "language": "Language"
 }

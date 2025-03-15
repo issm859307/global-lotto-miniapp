@@ -2,53 +2,82 @@
 
 export default function FaqPage() {
   return (
-    <div style={{ padding: 20 }}>
-      <h1>FAQ - 자주 묻는 질문</h1>
-      
-      <section style={{ marginBottom: "20px" }}>
-        <h2>일반 로또 FAQ</h2>
-        <ul>
-          <li>
-            <strong>Q:</strong> 티켓은 어떻게 구매하나요?<br />
-            <strong>A:</strong> 1 WLD당 1장의 티켓을 구매할 수 있으며, 1~100장까지 구매 가능합니다.
-          </li>
-          <li>
-            <strong>Q:</strong> 추첨 주기는 어떻게 되나요?<br />
-            <strong>A:</strong> 일반 로또는 매 7일마다 자동 추첨되며, 당첨금은 등수별로 배분됩니다.
-          </li>
-          <li>
-            <strong>Q:</strong> 당첨금 분배는 어떻게 처리되나요?<br />
-            <strong>A:</strong> 티켓 구매 시 결제 금액에서 5% 수수료 차감 후, 남은 금액을 배분합니다.
-          </li>
-        </ul>
-      </section>
-      
-      <section style={{ marginBottom: "20px" }}>
-        <h2>VIP 로또 FAQ</h2>
-        <ul>
-          <li>
-            <strong>Q:</strong> VIP 티켓의 가격과 구매 한도는?<br />
-            <strong>A:</strong> VIP 티켓은 10 WLD이며, 1~500장까지 구매할 수 있습니다.
-          </li>
-          <li>
-            <strong>Q:</strong> VIP 로또의 추첨 주기 및 당첨금 배분은 어떻게 되나요?<br />
-            <strong>A:</strong> VIP 로또는 14일마다 추첨되며, 전체 잭팟 금액의 50%만 배분되고 나머지는 이월됩니다.
-          </li>
-        </ul>
-      </section>
+    <div className="max-w-md mx-auto bg-white p-4 rounded shadow animate-fadeIn space-y-6">
+      <h1 className="text-2xl font-bold mb-4">FAQ - 자주 묻는 질문</h1>
       
       <section>
-        <h2>기타 FAQ</h2>
-        <ul>
-          <li>
-            <strong>Q:</strong> 티켓 구매 시 왜 5% 수수료가 발생하나요?<br />
-            <strong>A:</strong> 결제 금액에서 자동으로 5%가 차감되어 개발자에게 귀속됩니다.
-          </li>
-          <li>
-            <strong>Q:</strong> 친구 초대 보상은 어떻게 되나요?<br />
-            <strong>A:</strong> 친구 초대 시, 각 회차 추첨 시 전체 금액의 2%가 보상으로 배분됩니다.
-          </li>
-        </ul>
+        <h2 className="font-semibold">티켓 구매 & 기본 규칙</h2>
+        <p><strong>Q1.</strong> 티켓은 어떻게 구매하나요?</p>
+        <p>
+          A: 홈 화면에서 “티켓 구매” 버튼을 누르거나, 하단의 “로또” 메뉴에 들어가 일반(1 WLD, 1~100장) 또는 VIP(10 WLD, 1~500장) 로또를 선택한 후 티켓 수와 번호를 지정하여 구매합니다.
+        </p>
+        <p><strong>Q2.</strong> 일반 로또와 VIP 로또의 차이는 무엇인가요?</p>
+        <p>
+          A: 일반 로또는 매주 추첨되며, 전체 잭팟의 25%가 다음 회차로 이월되고 75%가 배분됩니다.<br />
+          VIP 로또는 14일마다 추첨되며, 전체 잭팟의 50%가 이월되고 50%가 배분되며, 1등 당첨자가 없으면 1등 상금이 하위 등급에 재분배됩니다.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-semibold">당첨금 및 추첨</h2>
+        <p><strong>Q3.</strong> 당첨금은 어떻게 계산되나요?</p>
+        <p>
+          A: 전체 판매액에서 5% 수수료를 차감한 금액이 잭팟이며, 일반 로또는 잭팟의 25%를 이월하고 75%를 당첨금으로 배분(배분 비율: 1등 50%, 2등 20%, 3등 15%, 4등 10%, 5등 5%)합니다. VIP 로또는 50% 이월 + 50% 배분, 1등 미당첨 시 하위 등급에 재분배됩니다.
+        </p>
+        <p><strong>Q4.</strong> 당첨금은 언제 받을 수 있나요?</p>
+        <p>
+          A: 추첨 결과가 확정되면 바로 청구할 수 있으며, 지급은 블록체인 처리 속도에 따라 수 분 내에 이루어집니다.
+        </p>
+        <p><strong>Q5.</strong> 당첨자가 없는 경우는 어떻게 되나요?</p>
+        <p>
+          A: 전체 당첨자가 없으면 잭팟 전액이 다음 회차로 이월되며, 특정 등수 당첨자가 없으면 해당 상금만 추가로 이월됩니다.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-semibold">미청구 상금 & 이월</h2>
+        <p><strong>Q6.</strong> 당첨 후 1개월 내에 청구하지 않으면?</p>
+        <p>
+          A: 당첨금은 추첨 후 1개월간 보관되며, 이 기간 내에 청구하지 않으면 자동으로 다음 회차 상금 풀에 추가되거나, 플랫폼 운영 및 보상 프로그램에 활용됩니다. 이렇게 하면 당첨금이 소멸되지 않고, 더 많은 사용자에게 혜택이 돌아갑니다.
+        </p>
+        <p><strong>Q7.</strong> 등수별 당첨자가 없으면 상금은 어떻게 되나요?</p>
+        <p>
+          A: 일반 로또는 해당 등수 상금이 100% 이월되며, VIP 로또에서는 1등 미당첨 시 1등 상금이 하위 등급에 재분배되고, 나머지 당첨자가 없는 경우 해당 상금이 100% 이월됩니다.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-semibold">수수료 및 공정성</h2>
+        <p><strong>Q8.</strong> 5% 수수료는 어디에 쓰이나요?</p>
+        <p>
+          A: 수수료는 플랫폼 유지, 개발 및 보안 강화 등 운영 비용에 사용됩니다.
+        </p>
+        <p><strong>Q9.</strong> 공정성은 어떻게 보장되나요?</p>
+        <p>
+          A: 모든 추첨은 블록체인 기반 스마트 컨트랙트를 통해 자동으로 진행되며, 조작이 불가능하고 결과는 투명하게 공개됩니다.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-semibold">법적 안내 및 고객 지원</h2>
+        <p><strong>Q10.</strong> 해외 참여 및 나이 제한은 있나요?</p>
+        <p>
+          A: 각 지역 법령에 따라 제한될 수 있으며, 일반적으로 성인(만 18세 이상)만 참여 가능합니다.
+        </p>
+        <p><strong>Q11.</strong> 당첨금에 대한 세금은 어떻게 되나요?</p>
+        <p>
+          A: 지역별 세법에 따라 세금이 부과될 수 있으니, 관할 법규를 확인하시기 바랍니다.
+        </p>
+        <p><strong>Q12.</strong> 문제가 생기면 누구에게 문의하나요?</p>
+        <p>
+          A: 앱 내 고객 센터 또는 문의하기 기능을 통해 신속하게 지원을 받을 수 있습니다.
+        </p>
+      </section>
+
+      <section className="text-xs text-gray-500">
+        <p>※ 로또는 당첨을 보장하지 않으며, 티켓 구매는 투자 손실의 위험이 있습니다.</p>
+        <p>※ 본 서비스는 엔터테인먼트 목적으로 운영되며, 참여는 전적으로 사용자의 책임입니다.</p>
+        <p>※ 운영 정책은 사전 공지를 통해 변경될 수 있습니다.</p>
       </section>
     </div>
   );

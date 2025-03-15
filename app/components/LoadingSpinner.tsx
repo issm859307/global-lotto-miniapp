@@ -2,32 +2,10 @@
 
 export default function LoadingSpinner() {
   return (
-    <div style={{ display: "inline-block" }}>
-      <svg
-        style={{ margin: "auto", background: "none", display: "block" }}
-        width="24px"
-        height="24px"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="xMidYMid"
-      >
-        <circle
-          cx="50"
-          cy="50"
-          fill="none"
-          stroke="#fff"
-          strokeWidth="10"
-          r="35"
-          strokeDasharray="164.93361431346415 56.97787143782138"
-        >
-          <animateTransform
-            attributeName="transform"
-            type="rotate"
-            repeatCount="indefinite"
-            dur="1s"
-            values="0 50 50;360 50 50"
-            keyTimes="0;1"
-          ></animateTransform>
-        </circle>
+    <div className="inline-block">
+      <svg className="animate-spin h-6 w-6 text-white" viewBox="0 0 24 24">
+        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
       </svg>
     </div>
   );
